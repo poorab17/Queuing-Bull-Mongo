@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+ 
+    <div class="box" id="heading">
+    <h1> <%= listTitle %> </h1>
+  </div>
+
+  <div>
+    <% for (let i=0; i<newListItems.length; i++) { %>
+      <form action="/delete" method="post">
+      <div class="item">
+        <input type="checkbox" name="checkbox" value="<%= newListItems[i]._id %>" onchange="this.form.submit()">
+        <p><%=  newListItems[i].name  %></p>
+      </div>
+      <input type="hidden" name="listName" value="<%= listTitle %>"></input>
+      </form>
+      <% } %> 
+    </div>
+    
+         
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="/" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+</body>
+</html>

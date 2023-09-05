@@ -1,0 +1,77 @@
+/* styles.css */
+
+/* Apply styles to the heading */
+#heading {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the list items */
+.item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Style the checkbox */
+.item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Style the container */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style form elements */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+ .logout-button-container {
+            position: relative;
+            float: right;
+            margin: 10px;
+        }
+
+        /* Style for the logout button */
+        .logout-button {
+            padding: 5px 10px;
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
